@@ -50,7 +50,7 @@
             this.txtLastName = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
-            this.metroLink1 = new MetroFramework.Controls.MetroLink();
+            this.mlPersonelListesi = new MetroFramework.Controls.MetroLink();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImageUrl)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.metroPanel1.SuspendLayout();
@@ -61,7 +61,7 @@
             this.btnSave.Location = new System.Drawing.Point(492, 327);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(202, 48);
-            this.btnSave.TabIndex = 10;
+            this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Kaydet";
             this.btnSave.UseSelectable = true;
             this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
@@ -92,7 +92,7 @@
             this.cmbDepartment.Location = new System.Drawing.Point(195, 252);
             this.cmbDepartment.Name = "cmbDepartment";
             this.cmbDepartment.Size = new System.Drawing.Size(242, 29);
-            this.cmbDepartment.TabIndex = 5;
+            this.cmbDepartment.TabIndex = 7;
             this.cmbDepartment.UseSelectable = true;
             // 
             // groupBox1
@@ -145,7 +145,7 @@
             this.txtFirstName.SelectionStart = 0;
             this.txtFirstName.ShortcutsEnabled = true;
             this.txtFirstName.Size = new System.Drawing.Size(242, 23);
-            this.txtFirstName.TabIndex = 1;
+            this.txtFirstName.TabIndex = 0;
             this.txtFirstName.UseSelectable = true;
             this.txtFirstName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtFirstName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -172,7 +172,7 @@
             this.rdFemale.Location = new System.Drawing.Point(73, 8);
             this.rdFemale.Name = "rdFemale";
             this.rdFemale.Size = new System.Drawing.Size(61, 15);
-            this.rdFemale.TabIndex = 3;
+            this.rdFemale.TabIndex = 0;
             this.rdFemale.Text = "Female";
             this.rdFemale.UseSelectable = true;
             // 
@@ -181,9 +181,9 @@
             this.rdRandom.AutoSize = true;
             this.rdRandom.Location = new System.Drawing.Point(153, 8);
             this.rdRandom.Name = "rdRandom";
-            this.rdRandom.Size = new System.Drawing.Size(57, 15);
-            this.rdRandom.TabIndex = 3;
-            this.rdRandom.Text = "Karışık";
+            this.rdRandom.Size = new System.Drawing.Size(68, 15);
+            this.rdRandom.TabIndex = 1;
+            this.rdRandom.Text = "Random";
             this.rdRandom.UseSelectable = true;
             // 
             // rdMale
@@ -203,7 +203,7 @@
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.Location = new System.Drawing.Point(85, 35);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(93, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(94, 19);
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Personel Adı : ";
             // 
@@ -220,7 +220,7 @@
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.Location = new System.Drawing.Point(66, 64);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(112, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(113, 19);
             this.metroLabel2.TabIndex = 0;
             this.metroLabel2.Text = "Personel Soyadı : ";
             // 
@@ -249,7 +249,7 @@
             this.txtAddress.SelectionStart = 0;
             this.txtAddress.ShortcutsEnabled = true;
             this.txtAddress.Size = new System.Drawing.Size(242, 23);
-            this.txtAddress.TabIndex = 1;
+            this.txtAddress.TabIndex = 5;
             this.txtAddress.UseSelectable = true;
             this.txtAddress.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtAddress.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -259,7 +259,7 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.Location = new System.Drawing.Point(27, 96);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(151, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(154, 19);
             this.metroLabel3.TabIndex = 0;
             this.metroLabel3.Text = "Personel Doğum Tarihi : ";
             // 
@@ -288,7 +288,7 @@
             this.txtPhone.SelectionStart = 0;
             this.txtPhone.ShortcutsEnabled = true;
             this.txtPhone.Size = new System.Drawing.Size(242, 23);
-            this.txtPhone.TabIndex = 1;
+            this.txtPhone.TabIndex = 6;
             this.txtPhone.UseSelectable = true;
             this.txtPhone.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPhone.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -298,7 +298,7 @@
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.Location = new System.Drawing.Point(61, 162);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(117, 19);
+            this.metroLabel5.Size = new System.Drawing.Size(118, 19);
             this.metroLabel5.TabIndex = 0;
             this.metroLabel5.Text = "Personel Cinsiyet : ";
             // 
@@ -327,7 +327,7 @@
             this.txtMail.SelectionStart = 0;
             this.txtMail.ShortcutsEnabled = true;
             this.txtMail.Size = new System.Drawing.Size(242, 23);
-            this.txtMail.TabIndex = 1;
+            this.txtMail.TabIndex = 3;
             this.txtMail.UseSelectable = true;
             this.txtMail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtMail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -337,7 +337,7 @@
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.Location = new System.Drawing.Point(64, 225);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(114, 19);
+            this.metroLabel6.Size = new System.Drawing.Size(117, 19);
             this.metroLabel6.TabIndex = 0;
             this.metroLabel6.Text = "Personel Telefon : ";
             // 
@@ -376,7 +376,7 @@
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.Location = new System.Drawing.Point(80, 128);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(98, 19);
+            this.metroLabel7.Size = new System.Drawing.Size(99, 19);
             this.metroLabel7.TabIndex = 0;
             this.metroLabel7.Text = "Personel Mail : ";
             // 
@@ -385,19 +385,20 @@
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.Location = new System.Drawing.Point(71, 196);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(107, 19);
+            this.metroLabel8.Size = new System.Drawing.Size(108, 19);
             this.metroLabel8.TabIndex = 0;
             this.metroLabel8.Text = "Personel Adres : ";
             // 
-            // metroLink1
+            // mlPersonelListesi
             // 
-            this.metroLink1.Location = new System.Drawing.Point(23, 381);
-            this.metroLink1.Name = "metroLink1";
-            this.metroLink1.Size = new System.Drawing.Size(141, 23);
-            this.metroLink1.TabIndex = 11;
-            this.metroLink1.Text = "Personel Listesi";
-            this.metroLink1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.metroLink1.UseSelectable = true;
+            this.mlPersonelListesi.Location = new System.Drawing.Point(23, 381);
+            this.mlPersonelListesi.Name = "mlPersonelListesi";
+            this.mlPersonelListesi.Size = new System.Drawing.Size(141, 23);
+            this.mlPersonelListesi.TabIndex = 11;
+            this.mlPersonelListesi.Text = "Personel Listesi";
+            this.mlPersonelListesi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mlPersonelListesi.UseSelectable = true;
+            this.mlPersonelListesi.Click += new System.EventHandler(this.mlPersonelListesi_Click);
             // 
             // Form1
             // 
@@ -407,7 +408,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.pcbImageUrl);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.metroLink1);
+            this.Controls.Add(this.mlPersonelListesi);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbImageUrl)).EndInit();
@@ -443,7 +444,7 @@
         private MetroFramework.Controls.MetroTextBox txtLastName;
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroLabel metroLabel8;
-        private MetroFramework.Controls.MetroLink metroLink1;
+        private MetroFramework.Controls.MetroLink mlPersonelListesi;
     }
 }
 

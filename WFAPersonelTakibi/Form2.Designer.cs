@@ -35,6 +35,7 @@
             this.tsmSil = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmYeni = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmDetay = new System.Windows.Forms.ToolStripMenuItem();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             this.cmsMenu.SuspendLayout();
             this.SuspendLayout();
@@ -59,39 +60,52 @@
             this.tsmYeni,
             this.tsmDetay});
             this.cmsMenu.Name = "metroContextMenu1";
-            this.cmsMenu.Size = new System.Drawing.Size(126, 92);
+            this.cmsMenu.Size = new System.Drawing.Size(181, 114);
             // 
             // tsmDuzenle
             // 
             this.tsmDuzenle.Name = "tsmDuzenle";
-            this.tsmDuzenle.Size = new System.Drawing.Size(125, 22);
+            this.tsmDuzenle.Size = new System.Drawing.Size(180, 22);
             this.tsmDuzenle.Text = "Düzenle";
+            this.tsmDuzenle.Click += new System.EventHandler(this.tsmDuzenle_Click);
             // 
             // tsmSil
             // 
             this.tsmSil.Name = "tsmSil";
-            this.tsmSil.Size = new System.Drawing.Size(125, 22);
+            this.tsmSil.Size = new System.Drawing.Size(180, 22);
             this.tsmSil.Text = "Sil";
+            this.tsmSil.Click += new System.EventHandler(this.tsmSil_Click);
             // 
             // tsmYeni
             // 
             this.tsmYeni.Name = "tsmYeni";
-            this.tsmYeni.Size = new System.Drawing.Size(125, 22);
+            this.tsmYeni.Size = new System.Drawing.Size(126, 22);
             this.tsmYeni.Text = "Yeni Kayıt";
             // 
             // tsmDetay
             // 
             this.tsmDetay.Name = "tsmDetay";
-            this.tsmDetay.Size = new System.Drawing.Size(125, 22);
+            this.tsmDetay.Size = new System.Drawing.Size(126, 22);
             this.tsmDetay.Text = "Detay";
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(20, 21);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(164, 33);
+            this.metroButton1.TabIndex = 2;
+            this.metroButton1.Text = "Geri Dön > Personel Ekleme";
+            this.metroButton1.UseSelectable = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.dgvEmployees);
             this.Name = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
             this.cmsMenu.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -106,5 +120,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmSil;
         private System.Windows.Forms.ToolStripMenuItem tsmYeni;
         private System.Windows.Forms.ToolStripMenuItem tsmDetay;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

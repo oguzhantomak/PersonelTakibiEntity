@@ -94,6 +94,7 @@
             this.metroLink1.Text = "Personel Listesi";
             this.metroLink1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink1.UseSelectable = true;
+            this.metroLink1.Click += new System.EventHandler(this.metroLink1_Click);
             // 
             // txtFirstName
             // 
@@ -178,7 +179,7 @@
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.Location = new System.Drawing.Point(85, 35);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(93, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(94, 19);
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Personel Adı : ";
             // 
@@ -195,7 +196,7 @@
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.Location = new System.Drawing.Point(66, 64);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(112, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(113, 19);
             this.metroLabel2.TabIndex = 0;
             this.metroLabel2.Text = "Personel Soyadı : ";
             // 
@@ -259,7 +260,7 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.Location = new System.Drawing.Point(27, 96);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(151, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(154, 19);
             this.metroLabel3.TabIndex = 0;
             this.metroLabel3.Text = "Personel Doğum Tarihi : ";
             // 
@@ -298,7 +299,7 @@
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.Location = new System.Drawing.Point(61, 162);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(117, 19);
+            this.metroLabel5.Size = new System.Drawing.Size(118, 19);
             this.metroLabel5.TabIndex = 0;
             this.metroLabel5.Text = "Personel Cinsiyet : ";
             // 
@@ -337,7 +338,7 @@
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.Location = new System.Drawing.Point(64, 225);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(114, 19);
+            this.metroLabel6.Size = new System.Drawing.Size(117, 19);
             this.metroLabel6.TabIndex = 0;
             this.metroLabel6.Text = "Personel Telefon : ";
             // 
@@ -376,7 +377,7 @@
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.Location = new System.Drawing.Point(80, 128);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(98, 19);
+            this.metroLabel7.Size = new System.Drawing.Size(99, 19);
             this.metroLabel7.TabIndex = 0;
             this.metroLabel7.Text = "Personel Mail : ";
             // 
@@ -385,7 +386,7 @@
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.Location = new System.Drawing.Point(71, 196);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(107, 19);
+            this.metroLabel8.Size = new System.Drawing.Size(108, 19);
             this.metroLabel8.TabIndex = 0;
             this.metroLabel8.Text = "Personel Adres : ";
             // 
@@ -397,6 +398,7 @@
             this.btnSave.TabIndex = 14;
             this.btnSave.Text = "Güncelle";
             this.btnSave.UseSelectable = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Form4
             // 
@@ -408,6 +410,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSave);
             this.Name = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbImageUrl)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
@@ -429,7 +432,6 @@
         private MetroFramework.Controls.MetroRadioButton rdRandom;
         private MetroFramework.Controls.MetroRadioButton rdMale;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroDateTime dtBirthDate;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroFramework.Controls.MetroTextBox txtAddress;
@@ -442,5 +444,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroButton btnSave;
+        public MetroFramework.Controls.MetroDateTime dtBirthDate;
     }
 }

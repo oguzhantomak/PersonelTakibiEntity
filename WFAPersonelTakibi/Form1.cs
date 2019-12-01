@@ -25,6 +25,37 @@ namespace WFAPersonelTakibi
             cmbDepartment.Items.AddRange(Enum.GetNames(typeof(Department)));
         }
 
+        #region Temizleme Metodu
+        public void Clean()
+        {
+            foreach (Control item in groupBox1.Controls)
+            {
+                if (item is MetroTextBox)
+                {
+                    item.Text = "";
+                }
+                foreach (Control itemx in metroPanel1.Controls)
+                {
+                    if (itemx is MetroRadioButton)
+                    {
+                        rdMale.Checked = false;
+                        rdFemale.Checked = false;
+                        rdRandom.Checked = false;
+                    }
+                }
+                if (item is MetroDateTime)
+                {
+                    dtBirthDate.Value = DateTime.Now;
+                }
+                if (item is MetroComboBox)
+                {
+                    cmbDepartment.SelectedItem = default;
+                }
+            }
+        } 
+        #endregion
+
+
         EmployeeService emp = new EmployeeService();
         private void BtnSave_Click(object sender, EventArgs e)
         {
@@ -51,7 +82,17 @@ namespace WFAPersonelTakibi
             employee.EmployeeDepartment = (Department)Enum.Parse(typeof(Department), cmbDepartment.Text);
 
             bool result = emp.Add(employee);
-            MetroMessageBox.Show(this,result? "Kayıt başarıyla eklendi":"Kayıt ekleme hatası","Kayıt ekleme bildirimi",MessageBoxButtons.OK,result?MessageBoxIcon.Hand:MessageBoxIcon.Error);
+            MetroMessageBox.Show(this, result ? "Kayıt başarıyla eklendi" : "Kayıt ekleme hatası", "Kayıt ekleme bildirimi", MessageBoxButtons.OK, result ? MessageBoxIcon.Hand : MessageBoxIcon.Error);
+
+            Clean();
+
+        }
+
+        private void mlPersonelListesi_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 
